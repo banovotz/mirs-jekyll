@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<article>
+    <div class="post-header-section">
+        <div class="container">
+            <p class="post-meta">{{ page.date | date: "%d. %m. %Y." }} • {{ page.author | default: "MIRS Tim" }}</p>
+            <h1 class="post-title">{{ page.title }}</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="post-content">
+            {{ content }}
+        </div>
+        <div style="text-align: center; margin-bottom: 60px;">
+             <a href="{{ '/blog/' | relative_url }}" class="btn">Natrag na Blog</a>
+        </div>
+    </div>
+</article>

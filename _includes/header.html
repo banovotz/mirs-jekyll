@@ -1,0 +1,31 @@
+{% if page.layout == 'home' %}
+<header class="hero-section">
+    <div class="hero-content">
+        <nav class="navbar">
+            <div class="logo"><a href="{{ '/' | relative_url }}" style="color: inherit;">MIRS</a></div>
+            <ul class="nav-links">
+                <li><a href="{{ '/' | relative_url }}#about">O parfemu</a></li>
+                <li><a href="{{ '/' | relative_url }}#notes">Note</a></li>
+                <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+                <li><a href="{{ '/' | relative_url }}#buy">Kupi</a></li>
+                <li><a href="{{ '/' | relative_url }}#mirs-quiz">Kviz</a></li>
+                <li><a href="{{ '/' | relative_url }}#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="hero-text">
+            <h1>MIRS</h1>
+            <p>Elegancija i izvorna priroda. Parfem za smjele žene.</p>
+            <a href="#about" class="btn">Otkrijte MIRS</a>
+        </div>
+    </div>
+</header>
+{% else %}
+<nav class="navbar" style="background-color: var(--bg-dark);">
+    <div class="logo"><a href="{{ '/' | relative_url }}" style="color: var(--light-text-color);">MIRS</a></div>
+    <ul class="nav-links">
+        <li><a href="{{ '/' | relative_url }}#about">O parfemu</a></li>
+        <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+        <li><a href="{{ '/' | relative_url }}#buy">Kupi</a></li>
+    </ul>
+</nav>
+{% endif %}

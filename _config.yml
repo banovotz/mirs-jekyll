@@ -1,0 +1,10 @@
+title: MIRS Perfumes
+description: MIRS je EDP parfem za žene koji spaja sofisticiranost i neukrotivu prirodu.
+post-list-heading: Postovi
+url: "https://mirsperfumes.eu"
+baseurl: ""
+permalink: /blog/:title/
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
